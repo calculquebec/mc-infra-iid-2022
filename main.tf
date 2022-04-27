@@ -2,8 +2,8 @@ terraform {
   required_version = ">= 1.1.0"
 }
 
-var "email" {}
-var "password" {}
+variable "email" {}
+variable "password" {}
 
 module "openstack" {
   source         = "git::https://github.com/ComputeCanada/magic_castle.git//openstack?ref=11.9.0"
