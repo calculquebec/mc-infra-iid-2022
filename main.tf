@@ -10,7 +10,7 @@ module "openstack" {
   config_git_url = "https://github.com/ComputeCanada/puppet-magic_castle.git"
   config_version = "11.9.0"
 
-  cluster_name = "iid-2022"
+  cluster_name = "iid-2022a"
   domain       = "calculquebec.cloud"
   image        = "Rocky-8.5-x64-2021-11"
 
@@ -48,7 +48,7 @@ output "public_ip" {
 
 ## Uncomment to register your domain name with CloudFlare
 module "dns" {
-  source           = "git::https://github.com/ComputeCanada/magic_castle.git//dns/cloudflare?ref=ext_data-11.7"
+  source           = "git::https://github.com/ComputeCanada/magic_castle.git//dns/cloudflare?ref=ext_data"
   email            = var.email
   name             = module.openstack.cluster_name
   domain           = module.openstack.domain
