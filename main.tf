@@ -34,7 +34,9 @@ module "openstack" {
 
   nb_users = 100
   guest_passwd = var.password
+  generate_ssh_key = true
 }
+
 
 output "accounts" {
   value = module.openstack.accounts
