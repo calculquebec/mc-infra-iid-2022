@@ -10,7 +10,7 @@ module "openstack" {
   config_git_url = "https://github.com/ComputeCanada/puppet-magic_castle.git"
   config_version = "11.9.0"
 
-  cluster_name = "iid-2022a"
+  cluster_name = "bootcamp"
   domain       = "calculquebec.cloud"
   image        = "Rocky-8.5-x64-2021-11"
 
@@ -30,6 +30,7 @@ module "openstack" {
 
   public_keys = [
 "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCy6vaeMkT+8lNOpvG+scN1iiRby35dGLyh1s3NOzufzqjAVvZL6t/vd7CN/hbTg+UUCc3V1hJOxGFGD3lrbXho1R5S4pZZ+Hge3icJm4BAPX6O9+H7aMWh/DE/vxHhyyC5QX8vg3AqUtCjihT03xftCC1XGzcP5lvs/bWgn1RS3pXY85UGY80NsRiGK08HpRER7ifNbo9zipIO4eQpRvTq6Ent5mqmeULMRX99SAbgUciaz5mUcULw5OimNFSjakdDRyF2xrdVsX6mwHPUT3UIXAxxS5GGTWIIH+jG0L0rqnjtnRwj8Imw+zOtE5itMg4kCNO+q5KJBH1jU6g57JFiEoxviHQH1ATlsw8e6gI2nhkfi10NgIzQ/yLxsK3IS4XwqMqDRInf6eGrf1CvbxYjOvpm7pOvLbvBdSrH+Ynx5X743oNIAmwjSoJ+ABa1RQp0XNrDfQXYmRrCA3sKgh/bOge+B8HDVEkCdSv+bAp/4rfGOKy4eOPsuzvrxnS8OWNet0+bAUV1Ta0VigHlFgEvQtS4/jrOO3It0ZaYMIZFAWqsjXimJ5LiT1TAgOCUO9950ZUA8BWQuSO+/EzREPCThRvFPKy82HAPOY8fo3jrEekuJdrjF8IDHxYL51YR+WPupY52HCHZkg4iDxKXnkrLS3K5/AIa5/+/CnHWL5WGHw== felix@armor.local",
+"ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAGIeiVqtLw59z8Yj4vTCY6Fg8xHcFH9dX6Ho+4iGOJ+kNAnaoeWTvsvCS9URR9oSMSA5ycB1SiryYw0Y5SwmeF/dAHzyPs3dsLKR5Jm77mDdLa+hMAn/3BfmCEzbpu5Qujv6bQ9IzqdLegTEs5RNoS8KzgZ6zZg86EFqtV3/j5eIHNbfg== quo@DESKTOP-NDNO6MR"
 ]
 
   nb_users = 100
